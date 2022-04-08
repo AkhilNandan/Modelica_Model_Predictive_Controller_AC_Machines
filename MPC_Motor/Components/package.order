@@ -1,0 +1,6 @@
+pins_pToPlug
+SignalGenerator
+simplifiedAirGap_IM
+simplifiedAirGap_PMSM
+TwoLevelInverterBooleanOutput
+TwoLevelInverterRealOutput
