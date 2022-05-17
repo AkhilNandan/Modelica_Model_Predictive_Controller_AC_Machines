@@ -1,4 +1,4 @@
-within MPC_Motor.Examples;
+within gradient.Examples;
 model Closed_Loop_MPC_PMSM
 extends Modelica.Icons.Example;
   Modelica.Electrical.Analog.Sources.StepVoltage stepVoltage(V = 560) annotation(
@@ -9,9 +9,9 @@ extends Modelica.Icons.Example;
     Placement(visible = true, transformation(origin = {60, 6}, extent = {{-10, -10}, {10, 10}}, rotation = -90)));
   Modelica.Electrical.Analog.Basic.Ground ground annotation(
     Placement(visible = true, transformation(origin = {-68, 4}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  EE_MPC_CET_Test.Components.TwoLevelInverterBooleanOutput VSI annotation(
+  MPC_Motor.Components.TwoLevelInverterBooleanOutput VSI annotation(
     Placement(visible = true, transformation(origin = {-28, 38}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-EE_MPC_CET_Test.Blocks.Predictive_Controller_PMSM predictive_Controller_PMSM annotation(
+MPC_Motor.Blocks.Predictive_Controller_PMSM predictive_Controller_PMSM annotation(
     Placement(visible = true, transformation(origin = {-28, 80}, extent = {{-10, -10}, {10, 10}}, rotation = -90)));
 Modelica.Blocks.Continuous.PI PI(T = 0.5, k = 1) annotation(
     Placement(visible = true, transformation(origin = {-28, -50}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
@@ -19,7 +19,7 @@ Modelica.Blocks.Sources.Ramp Ra(duration = 5, height = 150, offset = 0, startTim
     Placement(visible = true, transformation(origin = {-92, -50}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
 Modelica.Blocks.Math.Feedback F annotation(
     Placement(visible = true, transformation(origin = {-62, -50}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-EE_MPC_CET_Test.Blocks.abcToDQ abcToDQ annotation(
+MPC_Motor.Blocks.abcToDQ abcToDQ annotation(
     Placement(visible = true, transformation(origin = {12, 6}, extent = {{-10, -10}, {10, 10}}, rotation = -90)));
 Modelica.Mechanics.Rotational.Sensors.AngleSensor angleSensor annotation(
     Placement(visible = true, transformation(origin = {42, 2}, extent = {{-10, -10}, {10, 10}}, rotation = -90)));
