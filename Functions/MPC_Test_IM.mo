@@ -18,7 +18,6 @@ protected
   Real Isp_beta1;
   Real Isp_alpha1;
   constant Real Ts = data_MPC.Ts;
-  //Supply DC Voltages
   //Machine Parameters
   parameter Real Vdc = data_MPC.Vdc;
   constant Real Rs = data_MPC.Rs;
@@ -43,7 +42,6 @@ protected
   Real Tp;
   Real Fsp_alpha;
   Real Fsp_beta;
-  //Real Isp_alpha;
   Real Fsp;
   //Voltage vectors
   constant Real V_alpha[8] = {0, 1, 0.5, -0.5, -1, -0.5, 0.5, 0};
@@ -66,7 +64,6 @@ algorithm
     Fsp := sqrt(Fsp_alpha ^ 2 + Fsp_beta ^ 2);
     cost_Array[i] := 1.25 * (abs(Tref - Tp) / data_MPC.T_nom) + 5 * (abs(Fref - Fsp) / data_MPC.Fs_nom);
   end for;
-//Tp := 1.5 * P * (Fsp_alpha * Isp_beta1 - Fsp_beta * Isp_alpha1);
   annotation(
     Icon(graphics = {Text(lineColor = {108, 88, 49}, extent = {{-90, -90}, {90, 90}}, textString = "f"), Text(lineColor = {0, 0, 255}, extent = {{-150, 105}, {150, 145}}, textString = "%name"), Ellipse(lineColor = {108, 88, 49}, fillColor = {255, 215, 136}, fillPattern = FillPattern.Solid, extent = {{-100, -100}, {100, 100}}, endAngle = 360), Text(lineColor = {108, 88, 49}, extent = {{-90, -90}, {90, 90}}, textString = "f"), Text(lineColor = {0, 0, 255}, extent = {{-150, 105}, {150, 145}}, textString = "%name")}));
 end MPC_Test_IM;

@@ -4,3 +4,4 @@ package Records "Simulation custom package"
 
   annotation(uses(Modelica(version = "3.2.3")));
 end Records;
+ 
