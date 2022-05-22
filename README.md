@@ -6,4 +6,4 @@ Installation instructions (for Linux and Windows)
 - Download <code>Codes</code> folder in your home directory.
 - Open <code>OMEdit</code>. 
 - Goto <code>File</code> and click on <code>Load libray</code>. 
-- Navigate to <code>Codes</code> folder and select <code>package.mo</code> file.
+- Navigate to <code>Codes/MPC_Motor</code> folder and select <code>package.mo</code> file.
