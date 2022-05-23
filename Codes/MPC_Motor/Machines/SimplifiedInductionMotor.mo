@@ -1,6 +1,5 @@
 within MPC_Motor.Machines;
 model SimplifiedInductionMotor
-  extends Modelica.Icons.MotorIcon;
   extends MPC_Motor.Interfaces.PartialBasicMachine_IM(inertiaRotor.J = data_Motor.J);
   Modelica.Electrical.MultiPhase.Basic.Star star annotation(
     Placement(visible = true, transformation(origin = {-80, -24}, extent = {{-10, -10}, {10, 10}}, rotation = -90)));
