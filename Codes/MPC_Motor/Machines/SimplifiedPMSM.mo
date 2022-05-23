@@ -1,6 +1,5 @@
 within MPC_Motor.Machines;
 model SimplifiedPMSM
-extends Modelica.Icons.MotorIcon;
   extends MPC_Motor.Interfaces.PartialBasicMachine_PMSM(inertiaRotor.J = 0.0027);
   Modelica.Electrical.Analog.Basic.Ground ground annotation(
     Placement(visible = true, transformation(origin = {-80, -54}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
