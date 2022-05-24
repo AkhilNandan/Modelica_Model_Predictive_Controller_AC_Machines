@@ -7,4 +7,4 @@ Installation instructions (for Linux and Windows)
 - Open <code>OMEdit</code>. 
 - Goto <code>File</code> and click on <code>Load libray</code>. 
 - Navigate to <code>Codes/MPC_Motor</code> folder and select <code>package.mo</code> file.
-- Please note that this work request modelica version <code>3.2.3</code> so please reference your current MSL library to <code>3.2.3</code>
+- Please note that this work request modelica version <code>3.2.3</code> so please refer your current MSL library to <code>3.2.3</code>
